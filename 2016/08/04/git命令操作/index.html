@@ -1,0 +1,570 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
+
+
+
+
+
+
+<meta name="description" content="winsows  git 中文乱码解决进入git安装目录，通常是C:\Program Files (x86)\Git\1. 编辑etc\gitconfig文件，在文件末尾增加以下内容：[gui]  
+encoding = utf-8  #代码库统一使用utf-8  
+[i18n]  
+commitencoding = GB2312  #log编码,windows默认gb2312,声明后发到服务器才">
+<meta property="og:type" content="article">
+<meta property="og:title" content="git命令操作">
+<meta property="og:url" content="http://besthuangli.com/2016/08/04/git命令操作/index.html">
+<meta property="og:site_name" content="tody's blog">
+<meta property="og:description" content="winsows  git 中文乱码解决进入git安装目录，通常是C:\Program Files (x86)\Git\1. 编辑etc\gitconfig文件，在文件末尾增加以下内容：[gui]  
+encoding = utf-8  #代码库统一使用utf-8  
+[i18n]  
+commitencoding = GB2312  #log编码,windows默认gb2312,声明后发到服务器才">
+<meta property="og:updated_time" content="2016-08-06T03:06:39.639Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="git命令操作">
+<meta name="twitter:description" content="winsows  git 中文乱码解决进入git安装目录，通常是C:\Program Files (x86)\Git\1. 编辑etc\gitconfig文件，在文件末尾增加以下内容：[gui]  
+encoding = utf-8  #代码库统一使用utf-8  
+[i18n]  
+commitencoding = GB2312  #log编码,windows默认gb2312,声明后发到服务器才">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Muse',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 0,
+      author: '博主'
+    }
+  };
+</script>
+
+
+
+
+  <link rel="canonical" href="http://besthuangli.com/2016/08/04/git命令操作/"/>
+
+  <title> git命令操作 | tody's blog </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">tody's blog</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle">Walk steps step by step</p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                git命令操作
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-08-04T19:46:03+08:00" content="2016-08-04">
+              2016-08-04
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="winsows-git-中文乱码解决"><a href="#winsows-git-中文乱码解决" class="headerlink" title="winsows  git 中文乱码解决"></a>winsows  git 中文乱码解决</h2><h3 id="进入git安装目录，通常是C-Program-Files-x86-Git"><a href="#进入git安装目录，通常是C-Program-Files-x86-Git" class="headerlink" title="进入git安装目录，通常是C:\Program Files (x86)\Git\"></a>进入git安装目录，通常是C:\Program Files (x86)\Git\</h3><h4 id="1-编辑etc-gitconfig文件，在文件末尾增加以下内容："><a href="#1-编辑etc-gitconfig文件，在文件末尾增加以下内容：" class="headerlink" title="1. 编辑etc\gitconfig文件，在文件末尾增加以下内容："></a>1. 编辑etc\gitconfig文件，在文件末尾增加以下内容：</h4><pre><code>[gui]  
+encoding = utf-8  #代码库统一使用utf-8  
+[i18n]  
+commitencoding = GB2312  #log编码,windows默认gb2312,声明后发到服务器才不会乱码  
+[svn]  
+pathnameencoding = GB2312  #支持中文路径  
+</code></pre><h4 id="2-编辑etc-git-completion-bash文件-在文件末尾增加以下内容："><a href="#2-编辑etc-git-completion-bash文件-在文件末尾增加以下内容：" class="headerlink" title="2. 编辑etc\git-completion.bash文件,在文件末尾增加以下内容："></a>2. 编辑etc\git-completion.bash文件,在文件末尾增加以下内容：</h4><pre><code>alias ls=&apos;ls --show-control-chars --color=auto&apos;  #ls能够正常显示中文
+</code></pre><h4 id="3-编辑etc-inputrc文件，修改output-meta和convert-meta属性值："><a href="#3-编辑etc-inputrc文件，修改output-meta和convert-meta属性值：" class="headerlink" title="3. 编辑etc\inputrc文件，修改output-meta和convert-meta属性值："></a>3. 编辑etc\inputrc文件，修改output-meta和convert-meta属性值：</h4><pre><code>set output-meta on  #bash可以正常输入中文  
+set convert-meta off  
+</code></pre><h4 id="4-编辑profile文件，在文件末尾添加如下内容："><a href="#4-编辑profile文件，在文件末尾添加如下内容：" class="headerlink" title="4. 编辑profile文件，在文件末尾添加如下内容："></a>4. 编辑profile文件，在文件末尾添加如下内容：</h4><pre><code>export LESSHARESET=utf-8 
+</code></pre><h2 id="重置本地，完全同步成远程版本"><a href="#重置本地，完全同步成远程版本" class="headerlink" title="重置本地，完全同步成远程版本"></a>重置本地，完全同步成远程版本</h2><pre><code>git reset --hard origin/master
+</code></pre><h2 id="提交代码"><a href="#提交代码" class="headerlink" title="提交代码"></a>提交代码</h2><pre><code>git add *
+git commit -m &apos;提交内容&apos;
+git push origin master
+</code></pre><h2 id="查询所有分支"><a href="#查询所有分支" class="headerlink" title="查询所有分支"></a>查询所有分支</h2><pre><code>git branch -a
+</code></pre><h2 id="拉取代码"><a href="#拉取代码" class="headerlink" title="拉取代码"></a>拉取代码</h2><pre><code>git pull origin master
+</code></pre>
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/08/04/hexo-主题配置相关/" rel="next" title="hexo 主题配置相关">
+                <i class="fa fa-chevron-left"></i> hexo 主题配置相关
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/08/04/jenkins配置纪要/" rel="prev" title="jenkins配置纪要">
+                jenkins配置纪要 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.gif"
+               alt="huangli" />
+          <p class="site-author-name" itemprop="name">huangli</p>
+          <p class="site-description motion-element" itemprop="description">用来记录工作和生活的日常。俗话说的好”水滴石穿“，普普通通的的点点滴滴终将在某个时间会感觉到他无穷的力量！</p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">9</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          
+
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#winsows-git-中文乱码解决"><span class="nav-number">1.</span> <span class="nav-text">winsows  git 中文乱码解决</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#进入git安装目录，通常是C-Program-Files-x86-Git"><span class="nav-number">1.1.</span> <span class="nav-text">进入git安装目录，通常是C:\Program Files (x86)\Git\</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-编辑etc-gitconfig文件，在文件末尾增加以下内容："><span class="nav-number">1.1.1.</span> <span class="nav-text">1. 编辑etc\gitconfig文件，在文件末尾增加以下内容：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-编辑etc-git-completion-bash文件-在文件末尾增加以下内容："><span class="nav-number">1.1.2.</span> <span class="nav-text">2. 编辑etc\git-completion.bash文件,在文件末尾增加以下内容：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-编辑etc-inputrc文件，修改output-meta和convert-meta属性值："><span class="nav-number">1.1.3.</span> <span class="nav-text">3. 编辑etc\inputrc文件，修改output-meta和convert-meta属性值：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-编辑profile文件，在文件末尾添加如下内容："><span class="nav-number">1.1.4.</span> <span class="nav-text">4. 编辑profile文件，在文件末尾添加如下内容：</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#重置本地，完全同步成远程版本"><span class="nav-number">2.</span> <span class="nav-text">重置本地，完全同步成远程版本</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#提交代码"><span class="nav-number">3.</span> <span class="nav-text">提交代码</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#查询所有分支"><span class="nav-number">4.</span> <span class="nav-text">查询所有分支</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#拉取代码"><span class="nav-number">5.</span> <span class="nav-text">拉取代码</span></a></li></ol></div>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">huangli</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Muse
+  </a>
+</div>
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
