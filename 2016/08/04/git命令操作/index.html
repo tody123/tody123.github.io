@@ -87,7 +87,7 @@
 <meta name="description" content="winsows  git 中文乱码解决进入git安装目录，通常是C:\Program Files (x86)\Git\1. 编辑etc\gitconfig文件，在文件末尾增加以下内容：[gui]  
 encoding = utf-8  #代码库统一使用utf-8  
 [i18n]  
-commitencoding = GB2312  #log编码,windows默认gb2312,声明后发到服务器才">
+commitencoding = utf-8  #log编码,windows默认gb2312,声明后发到服务器才不">
 <meta property="og:type" content="article">
 <meta property="og:title" content="git命令操作">
 <meta property="og:url" content="http://besthuangli.com/2016/08/04/git命令操作/index.html">
@@ -95,14 +95,14 @@ commitencoding = GB2312  #log编码,windows默认gb2312,声明后发到服务器
 <meta property="og:description" content="winsows  git 中文乱码解决进入git安装目录，通常是C:\Program Files (x86)\Git\1. 编辑etc\gitconfig文件，在文件末尾增加以下内容：[gui]  
 encoding = utf-8  #代码库统一使用utf-8  
 [i18n]  
-commitencoding = GB2312  #log编码,windows默认gb2312,声明后发到服务器才">
-<meta property="og:updated_time" content="2016-08-06T03:06:39.639Z">
+commitencoding = utf-8  #log编码,windows默认gb2312,声明后发到服务器才不">
+<meta property="og:updated_time" content="2016-08-06T06:56:04.977Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="git命令操作">
 <meta name="twitter:description" content="winsows  git 中文乱码解决进入git安装目录，通常是C:\Program Files (x86)\Git\1. 编辑etc\gitconfig文件，在文件末尾增加以下内容：[gui]  
 encoding = utf-8  #代码库统一使用utf-8  
 [i18n]  
-commitencoding = GB2312  #log编码,windows默认gb2312,声明后发到服务器才">
+commitencoding = utf-8  #log编码,windows默认gb2312,声明后发到服务器才不">
 
 
 
@@ -288,9 +288,9 @@ commitencoding = GB2312  #log编码,windows默认gb2312,声明后发到服务器
         <h2 id="winsows-git-中文乱码解决"><a href="#winsows-git-中文乱码解决" class="headerlink" title="winsows  git 中文乱码解决"></a>winsows  git 中文乱码解决</h2><h3 id="进入git安装目录，通常是C-Program-Files-x86-Git"><a href="#进入git安装目录，通常是C-Program-Files-x86-Git" class="headerlink" title="进入git安装目录，通常是C:\Program Files (x86)\Git\"></a>进入git安装目录，通常是C:\Program Files (x86)\Git\</h3><h4 id="1-编辑etc-gitconfig文件，在文件末尾增加以下内容："><a href="#1-编辑etc-gitconfig文件，在文件末尾增加以下内容：" class="headerlink" title="1. 编辑etc\gitconfig文件，在文件末尾增加以下内容："></a>1. 编辑etc\gitconfig文件，在文件末尾增加以下内容：</h4><pre><code>[gui]  
 encoding = utf-8  #代码库统一使用utf-8  
 [i18n]  
-commitencoding = GB2312  #log编码,windows默认gb2312,声明后发到服务器才不会乱码  
+commitencoding = utf-8  #log编码,windows默认gb2312,声明后发到服务器才不会乱码  
 [svn]  
-pathnameencoding = GB2312  #支持中文路径  
+pathnameencoding = utf-8  #支持中文路径  
 </code></pre><h4 id="2-编辑etc-git-completion-bash文件-在文件末尾增加以下内容："><a href="#2-编辑etc-git-completion-bash文件-在文件末尾增加以下内容：" class="headerlink" title="2. 编辑etc\git-completion.bash文件,在文件末尾增加以下内容："></a>2. 编辑etc\git-completion.bash文件,在文件末尾增加以下内容：</h4><pre><code>alias ls=&apos;ls --show-control-chars --color=auto&apos;  #ls能够正常显示中文
 </code></pre><h4 id="3-编辑etc-inputrc文件，修改output-meta和convert-meta属性值："><a href="#3-编辑etc-inputrc文件，修改output-meta和convert-meta属性值：" class="headerlink" title="3. 编辑etc\inputrc文件，修改output-meta和convert-meta属性值："></a>3. 编辑etc\inputrc文件，修改output-meta和convert-meta属性值：</h4><pre><code>set output-meta on  #bash可以正常输入中文  
 set convert-meta off  
