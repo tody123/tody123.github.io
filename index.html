@@ -238,6 +238,105 @@
             
               
                 
+                <a class="post-title-link" href="/2016/11/16/https相关/" itemprop="url">
+                  https相关
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-11-16T16:30:09+08:00" content="2016-11-16">
+              2016-11-16
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="fiddler-抓取https包"><a href="#fiddler-抓取https包" class="headerlink" title="fiddler 抓取https包"></a>fiddler 抓取https包</h1><pre><code>1、下载CertMaker for iOS and Android 安装证书。
+ [http://www.telerik.com/fiddler/add-ons](http://www.telerik.com/fiddler/add-ons)
+2、fiddler 配置抓取https配置
+ 参考：
+[http://www.jianshu.com/p/54dd21c50f21](http://www.jianshu.com/p/54dd21c50f21)
+[http://blog.csdn.net/htdeyanlei/article/details/52874248](http://blog.csdn.net/htdeyanlei/article/details/52874248)
+</code></pre>
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2016/09/30/ssh安装与配置/" itemprop="url">
                   ssh安装与配置
                 </a>
@@ -282,7 +381,9 @@
       
         
           
-            
+            <h2 id="申请免费ssl采用的网站："><a href="#申请免费ssl采用的网站：" class="headerlink" title="申请免费ssl采用的网站："></a>申请免费ssl采用的网站：</h2><h3 id="先注册后登录按照步骤免费申请，申请地址如下官网https-startssl-com"><a href="#先注册后登录按照步骤免费申请，申请地址如下官网https-startssl-com" class="headerlink" title="先注册后登录按照步骤免费申请，申请地址如下官网https://startssl.com/"></a>先注册后登录按照步骤免费申请，申请地址如下官网<a href="https://startssl.com/" target="_blank" rel="external">https://startssl.com/</a></h3><h3 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h3><p><a href="http://www.itbulu.com/startssl.html" title="StartSSL免费SSL证书申请和账户注册完整过程" target="_blank" rel="external">http://www.itbulu.com/startssl.html</a></p>
+<p><a href="http://www.itbulu.com/uk2-free-ssl.html" title="申请UK2商家Comodo PositiveSSL免费SSL证书完整过程" target="_blank" rel="external">http://www.itbulu.com/uk2-free-ssl.html</a></p>
+
           
         
       
@@ -768,8 +869,10 @@ cat yourname.pub &gt;&gt;authorized_keys
       
         
           
-            <p>#启动方法：<br>    java  -jar jenkins.war<br>    java  -jar jenkins.war –ajp13Port=-1 –httpPort=8089</p>
-<pre><code>linux  
+            <h2 id="启动方法："><a href="#启动方法：" class="headerlink" title="启动方法："></a>启动方法：</h2><pre><code>java  -jar jenkins.war 
+java  -jar jenkins.war --ajp13Port=-1 --httpPort=8089
+
+linux  
 sudo nohup java -jar jenkins.war –httpPort=18080 –ajp13Port=18009  
 nohup java -jar jenkins.war –httpPort=8090 –ajp13Port=8089  
 nohup java -jar jenkins_located_path/jenkins.war --httpPort=8089 &amp;
@@ -792,7 +895,17 @@ nohup ./start_jenkins.sh &gt; jenkins.log 2&gt;&amp;1 &amp;
 ssh -T git@github.com
 Bitbucket:
 ssh -T git@bitbucket.org
-</code></pre>
+</code></pre><h2 id="windows-10安装jenkins问题总结："><a href="#windows-10安装jenkins问题总结：" class="headerlink" title="windows 10安装jenkins问题总结："></a>windows 10安装jenkins问题总结：</h2><p>先前已在一台win10电脑上安装配置好了jenkins,磕磕碰碰花了一天时间终于配置好了，由于没有做记录，不知道什么时候windows电脑系统升级把我的很多配置都清掉了，只得更加记忆片段重新配置了下，遇到一些问题，现在记录如下防止发生类似情况。</p>
+<p>   1）问题1:远程连接win10家庭版本</p>
+<p>   由于jenkins电脑配置是一台win10家庭版，没有远程连接桌面，为了方便我的win10笔记本电脑需要远程连接到这台安装了jenkins服务的电脑上。<br>   远程连接win10家庭版本，网上下载RDPWrap-v1.6.zip ，安装即可远程连接，当然远程配置要一切ok。</p>
+<p>   <a href="https://github.com/stascorp/rdpwrap" target="_blank" rel="external">https://github.com/stascorp/rdpwrap</a></p>
+<p>   2）问题2：jenkins 开机自启动<br>   jenkins 服务，遇到问题是jenkins服务是系统默认账户，需要改为当前账户及密码。</p>
+<p>   3） git配置及ssh 配置参考</p>
+<p>   <a href="http://blog.csdn.net/csxiaoshui/article/details/49945265" target="_blank" rel="external">http://blog.csdn.net/csxiaoshui/article/details/49945265</a></p>
+<p>   <a href="http://chnic.iteye.com/blog/2278563" target="_blank" rel="external">http://chnic.iteye.com/blog/2278563</a></p>
+<p>   4） 永久修改端口号</p>
+<p>   jenk安装路径jenkins.xml 修改即可，需要重启服务。</p>
+
           
         
       
@@ -901,6 +1014,17 @@ git commit -m &apos;提交内容&apos;
 git push origin master
 </code></pre><h2 id="查询所有分支"><a href="#查询所有分支" class="headerlink" title="查询所有分支"></a>查询所有分支</h2><pre><code>git branch -a
 </code></pre><h2 id="拉取代码"><a href="#拉取代码" class="headerlink" title="拉取代码"></a>拉取代码</h2><pre><code>git pull origin master
+</code></pre><h2 id="如何导入外部Git仓库到中国源代码托管平台（Git-OSC）"><a href="#如何导入外部Git仓库到中国源代码托管平台（Git-OSC）" class="headerlink" title="如何导入外部Git仓库到中国源代码托管平台（Git@OSC）"></a>如何导入外部Git仓库到中国源代码托管平台（Git@OSC）</h2><pre><code>仓库已经拉取到本地
+git remote -v 
+#查看远程地址
+git remote add osc  https://git.oschina.net/ipvb/iBurnMgr.git
+#添加新的远程地址
+git push -u osc --all
+#推送所有的本地分支
+git push osc --tags
+#推送所有的标签
+以上两条命令执行完毕，即完成导入。
+每一次修改后，你都可以使用push命令将最新的修改提交到GIT@OSC上。
 </code></pre>
           
         
@@ -1097,107 +1221,19 @@ git push origin master
 <hr>
 <h2 id="退出node执行环境"><a href="#退出node执行环境" class="headerlink" title="退出node执行环境"></a>退出node执行环境</h2><pre><code>process.exit()；
 </code></pre><h2 id="部署node网站"><a href="#部署node网站" class="headerlink" title="部署node网站"></a>部署node网站</h2><p>   <a href="https://cnodejs.org/topic/5059ce39fd37ea6b2f07e1a3" title="阿里云主机Nginx下配置NodeJS、Express和Forever" target="_blank" rel="external">https://cnodejs.org/topic/5059ce39fd37ea6b2f07e1a3</a></p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/08/02/Centos安装hexo博客纪要/" itemprop="url">
-                  Centos安装hexo笔记
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-08-02T21:04:35+08:00" content="2016-08-02">
-              2016-08-02
-            </time>
-          </span>
-
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="Centos安装hexo笔记"><a href="#Centos安装hexo笔记" class="headerlink" title="Centos安装hexo笔记"></a>Centos安装hexo笔记</h1><hr>
-<h2 id="安装nginx"><a href="#安装nginx" class="headerlink" title="安装nginx"></a>安装nginx</h2><pre><code>sudo yum install nginx 
-
-service nginx start
-</code></pre><h2 id="查看ngix的安装目录"><a href="#查看ngix的安装目录" class="headerlink" title="查看ngix的安装目录"></a>查看ngix的安装目录</h2><pre><code>ps  -ef | grep nginx
-/usr/sbin/nginx -V 查看配置文件路径（yum默认安装查看）
-</code></pre><p> master process 后面的就是 nginx的目录。</p>
-
+<h2 id="forever让nodejs应用后台执行"><a href="#forever让nodejs应用后台执行" class="headerlink" title="forever让nodejs应用后台执行"></a>forever让nodejs应用后台执行</h2><p>nodejs一般是当成一条用户命令执行的，当用户断开客户连接，运用也就停了，很烦人。如何让nodejs应用当成服务，在后台执行呢？</p>
+<p>最简单的办法：</p>
+<pre><code>nohup node app.js &amp;
+</code></pre><p>但是，forever能做更多的事情，比如分别记录输出和错误日志，比如可以在js中作为api使用。</p>
+<pre><code>sudo npm install forever -g   #安装
+forever start app.js          #启动
+forever stop app.js           #关闭
+forever start -l forever.log -o out.log -e err.log app.js   #输出日志和错误
+</code></pre><p>命令语法及使用 <a href="https://github.com/nodejitsu/forever" target="_blank" rel="external">https://github.com/nodejitsu/forever</a></p>
+<h2 id="bower安装包下载慢的问题解决方法："><a href="#bower安装包下载慢的问题解决方法：" class="headerlink" title="bower安装包下载慢的问题解决方法："></a>bower安装包下载慢的问题解决方法：</h2><p>思路是用https的协议去访问和下载，而不用bower默认的git协议</p>
+<pre><code>git config --global url.&quot;https://&quot;.insteadOf git://
+</code></pre><h2 id="ruby安装：采用淘宝源"><a href="#ruby安装：采用淘宝源" class="headerlink" title="ruby安装：采用淘宝源"></a>ruby安装：采用淘宝源</h2><pre><code>http://www.w3cplus.com/sassguide/install.html
+</code></pre>
           
         
       
@@ -1270,7 +1306,7 @@ service nginx start
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">12</span>
+              <span class="site-state-item-count">13</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>

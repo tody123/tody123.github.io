@@ -96,7 +96,7 @@ commitencoding = utf-8  #log编码,windows默认gb2312,声明后发到服务器�
 encoding = utf-8  #代码库统一使用utf-8  
 [i18n]  
 commitencoding = utf-8  #log编码,windows默认gb2312,声明后发到服务器才不">
-<meta property="og:updated_time" content="2016-08-06T06:56:04.977Z">
+<meta property="og:updated_time" content="2016-11-14T04:21:00.724Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="git命令操作">
 <meta name="twitter:description" content="winsows  git 中文乱码解决进入git安装目录，通常是C:\Program Files (x86)\Git\1. 编辑etc\gitconfig文件，在文件末尾增加以下内容：[gui]  
@@ -301,6 +301,17 @@ git commit -m &apos;提交内容&apos;
 git push origin master
 </code></pre><h2 id="查询所有分支"><a href="#查询所有分支" class="headerlink" title="查询所有分支"></a>查询所有分支</h2><pre><code>git branch -a
 </code></pre><h2 id="拉取代码"><a href="#拉取代码" class="headerlink" title="拉取代码"></a>拉取代码</h2><pre><code>git pull origin master
+</code></pre><h2 id="如何导入外部Git仓库到中国源代码托管平台（Git-OSC）"><a href="#如何导入外部Git仓库到中国源代码托管平台（Git-OSC）" class="headerlink" title="如何导入外部Git仓库到中国源代码托管平台（Git@OSC）"></a>如何导入外部Git仓库到中国源代码托管平台（Git@OSC）</h2><pre><code>仓库已经拉取到本地
+git remote -v 
+#查看远程地址
+git remote add osc  https://git.oschina.net/ipvb/iBurnMgr.git
+#添加新的远程地址
+git push -u osc --all
+#推送所有的本地分支
+git push osc --tags
+#推送所有的标签
+以上两条命令执行完毕，即完成导入。
+每一次修改后，你都可以使用push命令将最新的修改提交到GIT@OSC上。
 </code></pre>
       
     </div>
@@ -404,7 +415,7 @@ git push origin master
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">12</span>
+              <span class="site-state-item-count">13</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -436,7 +447,7 @@ git push origin master
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#winsows-git-中文乱码解决"><span class="nav-number">1.</span> <span class="nav-text">winsows  git 中文乱码解决</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#进入git安装目录，通常是C-Program-Files-x86-Git"><span class="nav-number">1.1.</span> <span class="nav-text">进入git安装目录，通常是C:\Program Files (x86)\Git\</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-编辑etc-gitconfig文件，在文件末尾增加以下内容："><span class="nav-number">1.1.1.</span> <span class="nav-text">1. 编辑etc\gitconfig文件，在文件末尾增加以下内容：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-编辑etc-git-completion-bash文件-在文件末尾增加以下内容："><span class="nav-number">1.1.2.</span> <span class="nav-text">2. 编辑etc\git-completion.bash文件,在文件末尾增加以下内容：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-编辑etc-inputrc文件，修改output-meta和convert-meta属性值："><span class="nav-number">1.1.3.</span> <span class="nav-text">3. 编辑etc\inputrc文件，修改output-meta和convert-meta属性值：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-编辑profile文件，在文件末尾添加如下内容："><span class="nav-number">1.1.4.</span> <span class="nav-text">4. 编辑profile文件，在文件末尾添加如下内容：</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#重置本地，完全同步成远程版本"><span class="nav-number">2.</span> <span class="nav-text">重置本地，完全同步成远程版本</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#提交代码"><span class="nav-number">3.</span> <span class="nav-text">提交代码</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#查询所有分支"><span class="nav-number">4.</span> <span class="nav-text">查询所有分支</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#拉取代码"><span class="nav-number">5.</span> <span class="nav-text">拉取代码</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#winsows-git-中文乱码解决"><span class="nav-number">1.</span> <span class="nav-text">winsows  git 中文乱码解决</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#进入git安装目录，通常是C-Program-Files-x86-Git"><span class="nav-number">1.1.</span> <span class="nav-text">进入git安装目录，通常是C:\Program Files (x86)\Git\</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-编辑etc-gitconfig文件，在文件末尾增加以下内容："><span class="nav-number">1.1.1.</span> <span class="nav-text">1. 编辑etc\gitconfig文件，在文件末尾增加以下内容：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-编辑etc-git-completion-bash文件-在文件末尾增加以下内容："><span class="nav-number">1.1.2.</span> <span class="nav-text">2. 编辑etc\git-completion.bash文件,在文件末尾增加以下内容：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-编辑etc-inputrc文件，修改output-meta和convert-meta属性值："><span class="nav-number">1.1.3.</span> <span class="nav-text">3. 编辑etc\inputrc文件，修改output-meta和convert-meta属性值：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-编辑profile文件，在文件末尾添加如下内容："><span class="nav-number">1.1.4.</span> <span class="nav-text">4. 编辑profile文件，在文件末尾添加如下内容：</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#重置本地，完全同步成远程版本"><span class="nav-number">2.</span> <span class="nav-text">重置本地，完全同步成远程版本</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#提交代码"><span class="nav-number">3.</span> <span class="nav-text">提交代码</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#查询所有分支"><span class="nav-number">4.</span> <span class="nav-text">查询所有分支</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#拉取代码"><span class="nav-number">5.</span> <span class="nav-text">拉取代码</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#如何导入外部Git仓库到中国源代码托管平台（Git-OSC）"><span class="nav-number">6.</span> <span class="nav-text">如何导入外部Git仓库到中国源代码托管平台（Git@OSC）</span></a></li></ol></div>
             
           </div>
         </section>

@@ -84,25 +84,31 @@
 
 
 
-<meta name="description" content="#启动方法：    java  -jar jenkins.war    java  -jar jenkins.war –ajp13Port=-1 –httpPort=8089
+<meta name="description" content="启动方法：java  -jar jenkins.war 
+java  -jar jenkins.war --ajp13Port=-1 --httpPort=8089
+
 linux  
 sudo nohup java -jar jenkins.war –httpPort=18080 –ajp13Port=18009  
-nohup java -jar jenkins.war –httpPor">
+nohup java -jar jenkins.war –httpPort=80">
 <meta property="og:type" content="article">
 <meta property="og:title" content="jenkins配置纪要">
 <meta property="og:url" content="http://besthuangli.com/2016/08/04/jenkins配置纪要/index.html">
 <meta property="og:site_name" content="tody's blog">
-<meta property="og:description" content="#启动方法：    java  -jar jenkins.war    java  -jar jenkins.war –ajp13Port=-1 –httpPort=8089
+<meta property="og:description" content="启动方法：java  -jar jenkins.war 
+java  -jar jenkins.war --ajp13Port=-1 --httpPort=8089
+
 linux  
 sudo nohup java -jar jenkins.war –httpPort=18080 –ajp13Port=18009  
-nohup java -jar jenkins.war –httpPor">
-<meta property="og:updated_time" content="2016-08-04T11:57:59.058Z">
+nohup java -jar jenkins.war –httpPort=80">
+<meta property="og:updated_time" content="2016-10-09T08:47:55.897Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="jenkins配置纪要">
-<meta name="twitter:description" content="#启动方法：    java  -jar jenkins.war    java  -jar jenkins.war –ajp13Port=-1 –httpPort=8089
+<meta name="twitter:description" content="启动方法：java  -jar jenkins.war 
+java  -jar jenkins.war --ajp13Port=-1 --httpPort=8089
+
 linux  
 sudo nohup java -jar jenkins.war –httpPort=18080 –ajp13Port=18009  
-nohup java -jar jenkins.war –httpPor">
+nohup java -jar jenkins.war –httpPort=80">
 
 
 
@@ -285,8 +291,10 @@ nohup java -jar jenkins.war –httpPor">
       
 
       
-        <p>#启动方法：<br>    java  -jar jenkins.war<br>    java  -jar jenkins.war –ajp13Port=-1 –httpPort=8089</p>
-<pre><code>linux  
+        <h2 id="启动方法："><a href="#启动方法：" class="headerlink" title="启动方法："></a>启动方法：</h2><pre><code>java  -jar jenkins.war 
+java  -jar jenkins.war --ajp13Port=-1 --httpPort=8089
+
+linux  
 sudo nohup java -jar jenkins.war –httpPort=18080 –ajp13Port=18009  
 nohup java -jar jenkins.war –httpPort=8090 –ajp13Port=8089  
 nohup java -jar jenkins_located_path/jenkins.war --httpPort=8089 &amp;
@@ -309,7 +317,17 @@ nohup ./start_jenkins.sh &gt; jenkins.log 2&gt;&amp;1 &amp;
 ssh -T git@github.com
 Bitbucket:
 ssh -T git@bitbucket.org
-</code></pre>
+</code></pre><h2 id="windows-10安装jenkins问题总结："><a href="#windows-10安装jenkins问题总结：" class="headerlink" title="windows 10安装jenkins问题总结："></a>windows 10安装jenkins问题总结：</h2><p>先前已在一台win10电脑上安装配置好了jenkins,磕磕碰碰花了一天时间终于配置好了，由于没有做记录，不知道什么时候windows电脑系统升级把我的很多配置都清掉了，只得更加记忆片段重新配置了下，遇到一些问题，现在记录如下防止发生类似情况。</p>
+<p>   1）问题1:远程连接win10家庭版本</p>
+<p>   由于jenkins电脑配置是一台win10家庭版，没有远程连接桌面，为了方便我的win10笔记本电脑需要远程连接到这台安装了jenkins服务的电脑上。<br>   远程连接win10家庭版本，网上下载RDPWrap-v1.6.zip ，安装即可远程连接，当然远程配置要一切ok。</p>
+<p>   <a href="https://github.com/stascorp/rdpwrap" target="_blank" rel="external">https://github.com/stascorp/rdpwrap</a></p>
+<p>   2）问题2：jenkins 开机自启动<br>   jenkins 服务，遇到问题是jenkins服务是系统默认账户，需要改为当前账户及密码。</p>
+<p>   3） git配置及ssh 配置参考</p>
+<p>   <a href="http://blog.csdn.net/csxiaoshui/article/details/49945265" target="_blank" rel="external">http://blog.csdn.net/csxiaoshui/article/details/49945265</a></p>
+<p>   <a href="http://chnic.iteye.com/blog/2278563" target="_blank" rel="external">http://chnic.iteye.com/blog/2278563</a></p>
+<p>   4） 永久修改端口号</p>
+<p>   jenk安装路径jenkins.xml 修改即可，需要重启服务。</p>
+
       
     </div>
 
@@ -412,7 +430,7 @@ ssh -T git@bitbucket.org
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">12</span>
+              <span class="site-state-item-count">13</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -444,7 +462,7 @@ ssh -T git@bitbucket.org
               
             
             
-              <p class="post-toc-empty">此文章未包含目录</p>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#启动方法："><span class="nav-number">1.</span> <span class="nav-text">启动方法：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#windows-10安装jenkins问题总结："><span class="nav-number">2.</span> <span class="nav-text">windows 10安装jenkins问题总结：</span></a></li></ol></div>
             
           </div>
         </section>
